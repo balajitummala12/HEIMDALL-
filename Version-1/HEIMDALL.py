@@ -12,7 +12,7 @@ import requests
 
 # ================= CONFIG =================
 API_KEY = "YOUR GROQ API KEY HERE(I ABSTRACTED MINE)"
-TAVILY_API_KEY = "YOUR TAVILY API KEY"
+TAVILY_API_KEY = "YOUR TAVILY API KEY(I ABSTRACTED MINE)"
 
 client = OpenAI(
     api_key=API_KEY,
