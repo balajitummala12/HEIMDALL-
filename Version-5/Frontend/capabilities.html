@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Capabilities — HEIMDALL</title>
+
+<link rel="icon" href="logo.png" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="pages.css" />
+</head>
+
+<body data-page="capabilities">
+
+  <div id="heimdall-bg"></div>
+
+  <div class="app-shell">
+
+    <nav class="hx-nav">
+      <a href="index.html" class="hx-logo-link" aria-label="HEIMDALL home">
+        <img src="logo.png" alt="HEIMDALL" class="hx-logo" />
+      </a>
+
+      <ul class="hx-navlinks">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="chat.html" data-nav="chat">Chat</a></li>
+        <li><a href="history.html" data-nav="history">History</a></li>
+        <li><a href="capabilities.html" data-nav="capabilities">Capabilities</a></li>
+        <li><a href="settings.html" data-nav="settings">Settings</a></li>
+      </ul>
+
+      <div class="hx-nav-right">
+        <span class="hx-nav-tag">CORE v2.1</span>
+      </div>
+    </nav>
+
+    <main class="page-body capabilities-main">
+
+      <div class="capabilities-head">
+        <span class="eyebrow">System Modules</span>
+        <h1>Capabilities</h1>
+        <p>Six core modules HEIMDALL routes your requests through, automatically.</p>
+      </div>
+
+      <div class="capabilities-grid">
+
+        <div class="capability-card" style="--card-color:#4fd8ff">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 5h16v11H8l-4 4V5Z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Intelligent Conversation</h3>
+          <p>Natural, context-aware dialogue that remembers what matters across a session.</p>
+        </div>
+
+        <div class="capability-card" style="--card-color:#7c8cff">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M9 8L4 12L9 16M15 8L20 12L15 16"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Coding &amp; Debugging</h3>
+          <p>Writes, reviews, and fixes code across languages with clear reasoning.</p>
+        </div>
+
+        <div class="capability-card" style="--card-color:#ff9a4d">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 19V13M10 19V8M16 19V11M4 13L10 8L14 10.5L20 5"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Deep Analysis</h3>
+          <p>Breaks down complex information into structured, actionable insight.</p>
+        </div>
+
+        <div class="capability-card" style="--card-color:#5fe0c0">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 4h16v16H4V4Z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"/>
+              <path d="M8 9h2M14 9h2M8 13h8M8 17h5"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Mathematics</h3>
+          <p>Solves and explains problems from arithmetic through advanced calculus.</p>
+        </div>
+
+        <div class="capability-card" style="--card-color:#ff6b9d">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3L14.5 9.5L21 12L14.5 14.5L12 21L9.5 14.5L3 12L9.5 9.5L12 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>Plans multi-step approaches and works through them methodically.</p>
+        </div>
+
+        <div class="capability-card" style="--card-color:#4fd8ff">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12"
+                      cy="12"
+                      r="8.2"
+                      stroke="currentColor"
+                      stroke-width="1.7"/>
+              <path d="M3.8 12h16.4M12 3.8c2.3 2.3 3.5 5.2 3.5 8.2s-1.2 5.9-3.5 8.2c-2.3-2.3-3.5-5.2-3.5-8.2S9.7 6.1 12 3.8Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Web Search</h3>
+          <p>Pulls in live information from the web when the answer needs it.</p>
+        </div>
+
+      </div>
+    </main>
+
+    <div class="hx-status">
+      <span class="hx-status-dot"></span>
+      <span class="hx-status-text">SYSTEM ONLINE</span>
+    </div>
+
+  </div>
+
+<script src="background.js"></script>
+<script src="main.js"></script>
+
+  <script src="device-router.js"></script>
+</body>
+</html>

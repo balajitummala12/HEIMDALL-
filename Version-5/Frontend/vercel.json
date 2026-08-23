@@ -1,0 +1,41 @@
+{
+  "rewrites": [
+    {
+      "source": "/chat",
+      "destination": "/chat.html"
+    },
+    {
+      "source": "/history",
+      "destination": "/history.html"
+    },
+    {
+      "source": "/capabilities",
+      "destination": "/capabilities.html"
+    },
+    {
+      "source": "/settings",
+      "destination": "/settings.html"
+    },
+
+    {
+      "source": "/mobile",
+      "destination": "/mobile/index.html"
+    },
+    {
+      "source": "/mobile/chat",
+      "destination": "/mobile/chat.html"
+    },
+    {
+      "source": "/mobile/history",
+      "destination": "/mobile/history.html"
+    },
+    {
+      "source": "/mobile/capabilities",
+      "destination": "/mobile/capabilities.html"
+    },
+    {
+      "source": "/mobile/settings",
+      "destination": "/mobile/settings.html"
+    }
+  ]
+}

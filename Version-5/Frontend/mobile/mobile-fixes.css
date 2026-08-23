@@ -1,0 +1,312 @@
+/* ==========================================================================
+   HEIMDALL MOBILE — FINAL UI FIXES
+   ========================================================================== */
+
+/* =========================================================
+   PAGE FOUNDATION
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: #05070d !important;
+  overflow-x: hidden;
+}
+
+/* Keep background layers independent from page layout */
+.mx-bg,
+.mx-bg-grain,
+.mx-stars {
+  position: fixed !important;
+  inset: 0 !important;
+  pointer-events: none !important;
+}
+
+/* =========================================================
+   LIVE BACKGROUND
+   ========================================================= */
+
+.mx-bg {
+  z-index: 0 !important;
+
+  background:
+    radial-gradient(
+      circle at var(--mx-x, 50%) var(--mx-y, 50%),
+      rgba(79, 216, 255, 0.16),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 80% 25%,
+      rgba(59, 111, 224, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 20% 85%,
+      rgba(124, 140, 255, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #03050a,
+      #07101c,
+      #040712
+    ) !important;
+
+  animation:
+    heimdall-bg-drift 16s ease-in-out infinite alternate !important;
+}
+
+@keyframes heimdall-bg-drift {
+
+  0% {
+    background-position:
+      50% 50%,
+      80% 25%,
+      20% 85%,
+      center;
+  }
+
+  100% {
+    background-position:
+      55% 45%,
+      75% 30%,
+      25% 80%,
+      center;
+  }
+
+}
+
+
+/* =========================================================
+   STAR FIELD
+   ========================================================= */
+
+.mx-stars {
+  z-index: 1 !important;
+  overflow: hidden;
+}
+
+.mx-star {
+  position: absolute !important;
+
+  border-radius: 50%;
+
+  background: #bdeeff !important;
+
+  box-shadow:
+    0 0 4px rgba(79, 216, 255, 0.7),
+    0 0 8px rgba(79, 216, 255, 0.25);
+
+  animation:
+    heimdall-star-pulse 3s ease-in-out infinite alternate !important;
+}
+
+@keyframes heimdall-star-pulse {
+
+  from {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 0.9;
+    transform: scale(1.5);
+  }
+
+}
+
+
+/* =========================================================
+   GRAIN
+   ========================================================= */
+
+.mx-bg-grain {
+  z-index: 2 !important;
+
+  opacity: 0.06 !important;
+
+  background-image:
+    radial-gradient(
+      rgba(255, 255, 255, 0.15) 0.5px,
+      transparent 0.7px
+    ) !important;
+
+  background-size: 5px 5px !important;
+}
+
+
+/* =========================================================
+   APP CONTENT
+   ========================================================= */
+
+.mx-app {
+  position: relative !important;
+
+  z-index: 10 !important;
+
+  min-height: 100% !important;
+
+  background: transparent !important;
+
+  transform: none !important;
+  animation: none !important;
+}
+
+
+/* =========================================================
+   ABSOLUTELY STABLE BOTTOM NAVIGATION
+   ========================================================= */
+
+.mx-tabbar {
+  position: fixed !important;
+
+  left: 0 !important;
+  right: 0 !important;
+
+  bottom: 0 !important;
+  top: auto !important;
+
+  z-index: 9999 !important;
+
+  height: 70px !important;
+
+  margin: 0 !important;
+
+  box-sizing: border-box !important;
+
+  transform: translate3d(0, 0, 0) !important;
+
+  animation: none !important;
+
+  transition: none !important;
+
+  will-change: auto !important;
+
+  contain: layout paint style !important;
+
+  background:
+    rgba(5, 9, 18, 0.96) !important;
+
+  backdrop-filter:
+    blur(18px) !important;
+
+  -webkit-backdrop-filter:
+    blur(18px) !important;
+
+  border-top:
+    1px solid rgba(79, 216, 255, 0.18) !important;
+
+  box-shadow:
+    0 -8px 30px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* Kill ALL old animations affecting tabbar */
+
+.mx-tabbar,
+.mx-tabbar::before,
+.mx-tabbar::after,
+.mx-tab,
+.mx-tab::before,
+.mx-tab::after,
+.mx-tab svg,
+.mx-tab.active,
+.mx-tab.active svg {
+  animation: none !important;
+}
+
+
+/* Individual tabs */
+
+.mx-tab {
+  flex: 1 !important;
+
+  height: 70px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  flex-direction: column !important;
+
+  gap: 3px !important;
+
+  transform: none !important;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease !important;
+}
+
+
+/* Prevent active tab from jumping */
+
+.mx-tab.active {
+  transform: none !important;
+}
+
+.mx-tab svg,
+.mx-tab.active svg {
+  transform: none !important;
+}
+
+
+/* Labels */
+
+.mx-tab-label {
+  font-size: 9px !important;
+
+  line-height: 1 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   SETTINGS ICON
+   ========================================================= */
+
+.mx-tab[data-tab="settings"] svg {
+  width: 21px !important;
+  height: 21px !important;
+}
+
+
+/* =========================================================
+   CONTENT CLEARANCE
+   ========================================================= */
+
+.mx-main {
+  padding-bottom: 100px !important;
+}
+
+
+/* =========================================================
+   ENERGY SAVING MODE
+   ========================================================= */
+
+body.energy-saving .mx-bg,
+body.energy-saving .mx-star {
+  animation-play-state: paused !important;
+}
+
+
+/* =========================================================
+   MOBILE STABILITY
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  .mx-app {
+    min-height: 100%;
+  }
+
+}

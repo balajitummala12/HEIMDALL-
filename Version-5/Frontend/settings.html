@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Settings — HEIMDALL</title>
+
+<!-- Correct paths -->
+<link rel="icon" href="logo.png" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="pages.css" />
+</head>
+
+<body data-page="settings">
+
+  <div id="heimdall-bg"></div>
+
+  <div class="app-shell">
+
+    <nav class="hx-nav">
+      <a href="index.html" class="hx-logo-link" aria-label="HEIMDALL home">
+        <img src="logo.png" alt="HEIMDALL" class="hx-logo" />
+      </a>
+
+      <ul class="hx-navlinks">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="chat.html" data-nav="chat">Chat</a></li>
+        <li><a href="history.html" data-nav="history">History</a></li>
+        <li><a href="capabilities.html" data-nav="capabilities">Capabilities</a></li>
+        <li><a href="settings.html" data-nav="settings">Settings</a></li>
+      </ul>
+
+      <div class="hx-nav-right">
+        <span class="hx-nav-tag">CORE v2.1</span>
+      </div>
+    </nav>
+
+    <main class="page-body settings-main">
+
+      <div class="settings-head">
+        <span class="eyebrow">System Configuration</span>
+        <h1>Settings</h1>
+      </div>
+
+
+      <!-- INTERFACE SETTINGS -->
+      <div class="settings-group">
+
+        <div class="settings-group-title">Interface</div>
+
+        <div class="settings-panel hx-panel">
+
+          <div class="setting-row">
+
+            <div class="setting-label">
+              <strong>Appearance</strong>
+              <span>Visual theme for the HEIMDALL interface</span>
+            </div>
+
+            <div class="setting-control">
+              <select id="setting-appearance" class="hx-select">
+                <option value="deep-space">Deep Space</option>
+                <option value="midnight">Midnight Blue</option>
+                <option value="high-contrast">High Contrast</option>
+              </select>
+            </div>
+
+          </div>
+
+
+          <div class="setting-row">
+
+            <div class="setting-label">
+              <strong>UI Opacity</strong>
+              <span>Panel and card transparency</span>
+            </div>
+
+            <div class="setting-control hx-slider-wrap">
+
+              <input
+                type="range"
+                id="setting-opacity"
+                min="40"
+                max="100"
+                value="85"
+              />
+
+              <span
+                class="slider-value"
+                id="opacity-value"
+              >
+                85%
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="setting-row">
+
+            <div class="setting-label">
+              <strong>Energy Saving Mode</strong>
+              <span>Pauses the animated background to reduce GPU load</span>
+            </div>
+
+            <div class="setting-control">
+              <button
+                type="button"
+                class="toggle"
+                id="setting-energy"
+                role="switch"
+                aria-checked="false"
+                aria-label="Energy Saving Mode"
+              ></button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- INTELLIGENCE SETTINGS -->
+      <div class="settings-group">
+
+        <div class="settings-group-title">Intelligence</div>
+
+        <div class="settings-panel hx-panel">
+
+          <div class="setting-row">
+
+            <div class="setting-label">
+              <strong>Primary Language Model</strong>
+              <span>Core reasoning engine used for responses</span>
+            </div>
+
+            <div class="setting-control">
+              <select id="setting-model" class="hx-select">
+                <option value="heimdall-core">Heimdall Core</option>
+                <option value="heimdall-swift">Heimdall Swift</option>
+                <option value="heimdall-deep">Heimdall Deep</option>
+              </select>
+            </div>
+
+          </div>
+
+
+          <div class="setting-row">
+
+            <div class="setting-label">
+              <strong>Voice Synchronization</strong>
+              <span>Enable spoken responses synced with text output</span>
+            </div>
+
+            <div class="setting-control">
+              <button
+                type="button"
+                class="toggle"
+                id="setting-voice"
+                role="switch"
+                aria-checked="false"
+                aria-label="Voice Synchronization"
+              ></button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <p
+        class="settings-save-hint"
+        id="save-hint"
+      >
+        Changes save automatically
+      </p>
+
+    </main>
+
+
+    <!-- SYSTEM STATUS -->
+    <div class="hx-status">
+      <span class="hx-status-dot"></span>
+      <span class="hx-status-text">SYSTEM ONLINE</span>
+    </div>
+
+  </div>
+
+
+  <!-- Correct JavaScript paths -->
+  <script src="background.js"></script>
+  <script src="main.js"></script>
+  <script src="settings.js"></script>
+
+  <script src="device-router.js"></script>
+</body>
+</html>

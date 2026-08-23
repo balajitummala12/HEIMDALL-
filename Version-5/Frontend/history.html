@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>History — HEIMDALL</title>
+
+<!-- Correct paths -->
+<link rel="icon" href="logo.png" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="pages.css" />
+</head>
+
+<body data-page="history">
+
+  <div id="heimdall-bg"></div>
+
+  <div class="app-shell">
+
+    <nav class="hx-nav">
+      <a href="index.html" class="hx-logo-link" aria-label="HEIMDALL home">
+        <img src="logo.png" alt="HEIMDALL" class="hx-logo" />
+      </a>
+
+      <ul class="hx-navlinks">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="chat.html" data-nav="chat">Chat</a></li>
+        <li><a href="history.html" data-nav="history">History</a></li>
+        <li><a href="capabilities.html" data-nav="capabilities">Capabilities</a></li>
+        <li><a href="settings.html" data-nav="settings">Settings</a></li>
+      </ul>
+
+      <div class="hx-nav-right">
+        <span class="hx-nav-tag">CORE v2.1</span>
+      </div>
+    </nav>
+
+    <main class="page-body history-main">
+
+      <div class="history-head">
+
+        <div>
+          <span class="eyebrow">Conversation Log</span>
+          <h1>History</h1>
+        </div>
+
+        <div class="search-field history-search">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M20 20L16.5 16.5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <input
+            id="history-search"
+            type="text"
+            placeholder="Search conversations..."
+          />
+        </div>
+
+      </div>
+
+      <div
+        class="history-list"
+        id="history-list"
+      ></div>
+
+    </main>
+
+    <!-- SYSTEM STATUS -->
+    <div class="hx-status">
+      <span class="hx-status-dot"></span>
+      <span class="hx-status-text">SYSTEM ONLINE</span>
+    </div>
+
+  </div>
+
+<!-- Correct JavaScript paths -->
+<script src="background.js"></script>
+<script src="main.js"></script>
+<script src="history.js"></script>
+
+  <script src="device-router.js"></script>
+</body>
+</html>
