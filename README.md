@@ -1,123 +1,133 @@
 <div align="center">
 
-<img src="Version-5/Frontend/logo.png" width="220" height="220" style="border-radius:50%;" alt="HEIMDALL Logo"/>
-
-# HEIMDALL V5
-
-### An Intelligent AI Assistant • Built to Think, Respond & Evolve
-
-[![Version](https://img.shields.io/badge/Version-V5-111111?style=for-the-badge)]()
-[![AI](https://img.shields.io/badge/Powered%20by-AI-6C63FF?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)]()
+<img src="Version-5/Frontend/logo.png" width="220" height="220" alt="HEIMDALL Logo" style="border-radius: 50%; object-fit: cover;" />
 
 # ⚡ HEIMDALL V5
 
-### An evolving AI-powered assistant built to understand, reason, respond, and grow.
-
-<br/>
-
-> **"The goal was never to build just another chatbot."**
-
-<br/>
+### An Intelligent AI Assistant • Built to Think, Respond & Evolve
 
 ![Version](https://img.shields.io/badge/Version-V5-7c3aed?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-Backend-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![AI](https://img.shields.io/badge/AI-Intelligent%20Assistant-8b5cf6?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Actively%20Evolving-22c55e?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
 
 <br/>
 
-**HEIMDALL is an AI-powered assistant project focused on building a more structured, capable, and evolving intelligent system.**
-
-[Explore V5](#-heimdall-v5) •
-[Features](#-core-capabilities) •
-[Architecture](#-architecture) •
-[Installation](#-getting-started) •
-[Roadmap](#-roadmap)
+**HEIMDALL is an AI-powered assistant built with a dedicated frontend and backend architecture.**
 
 </div>
 
 ---
 
-# 🌌 HEIMDALL V5
+# 🧠 About HEIMDALL
 
-## An AI Assistant That Is More Than Just a Chat Interface
+> **"The goal was never to build just another chatbot."**
 
 HEIMDALL V5 is the fifth major evolution of my AI assistant project.
 
-The project started with a simple idea:
+What started as a simple AI assistant gradually went through multiple versions, experiments, rewrites, failures, improvements, and architectural changes.
 
-> **What if an AI assistant was designed as an actual system instead of just a prompt connected to an API?**
+With Version 5, the focus shifted toward building a more structured application by separating the user interface from the backend AI system.
 
-That question gradually turned into multiple experiments, architectures, rewrites, failures, improvements, and new ideas.
+Instead of keeping everything inside one large script, HEIMDALL is organized into different components responsible for handling requests, processing conversations, managing context, connecting with AI models, and supporting additional functionality.
 
-HEIMDALL V5 is the result of that journey so far.
+The goal is simple:
 
-It separates the application into a dedicated **frontend** and **backend**, while the backend itself is organized into multiple independent components responsible for different parts of the system.
-
-Instead of putting everything inside one large script, HEIMDALL V5 explores a modular architecture involving:
-
-- 🧠 AI processing
-- 🎯 Intent detection
-- 💬 Conversation handling
-- 🧩 Context management
-- 🧠 Memory systems
-- 🔀 AI routing
-- 🤖 Model providers
-- 🔎 Search capabilities
-- 🎙️ Voice integration
-- 💻 Command handling
-- 👤 Profile management
-- ⚙️ System monitoring
-- 🛠️ Development utilities
-
-The project is still evolving, and not every visible feature represents a completed production-ready capability.
-
-Some parts are fully functional.
-
-Some are experimental.
-
-Some are architecture prepared for future development.
-
-And some are simply ideas waiting for their moment.
-
-That is exactly what HEIMDALL is supposed to be:
-
-### **An evolving system.**
+### **Build an AI assistant as a complete system — not just a chat box connected to an API.**
 
 ---
 
-# ✨ Core Capabilities
+# ✨ What HEIMDALL Can Do
 
-## 💬 Intelligent Conversations
+## 💬 AI Conversations
 
-At its core, HEIMDALL processes user input and routes it through its AI system to generate intelligent responses.
+HEIMDALL allows users to interact with the assistant through a dedicated chat interface.
 
-The conversation architecture is designed around multiple stages instead of directly sending every input to a model.
+User messages are sent from the frontend to the backend, processed through the AI system, and returned as responses.
 
-A simplified flow looks like this:
+The application is designed around a complete frontend-to-backend communication flow rather than a standalone script.
+
+---
+
+## 🧠 Intent Detection
+
+The backend analyzes user input to better understand what the user is asking for.
+
+This helps HEIMDALL process different types of requests through the appropriate logic before generating a response.
+
+---
+
+## 🧩 Context-Aware Responses
+
+HEIMDALL maintains conversation context so that responses can take the ongoing interaction into account instead of treating every message as completely unrelated.
+
+This helps make conversations feel more connected and natural.
+
+---
+
+## 🔀 AI Model Integration
+
+The assistant connects to an AI provider through the backend to generate intelligent responses.
+
+The AI integration is separated from the main application flow, helping keep the backend organized and easier to work with.
+
+---
+
+## 🔎 Web Search Integration
+
+For requests that require external or up-to-date information, HEIMDALL includes web search integration.
+
+This allows the assistant to retrieve information beyond its normal conversational responses when needed.
+
+---
+
+## 🎙️ Voice Support
+
+HEIMDALL V5 includes voice-related functionality as part of the assistant system.
+
+The backend contains support for processing voice-based interaction alongside the text-based chat experience.
+
+---
+
+## 🎨 Dedicated User Interface
+
+HEIMDALL includes a custom-built frontend instead of relying on a basic terminal interface.
+
+The current interface includes dedicated pages for:
+
+- 🏠 **Home**
+- 💬 **Chat**
+- 🕘 **Conversation History**
+- ⚙️ **Settings**
+- 📱 **Mobile Interface**
+
+The frontend and backend are maintained as separate parts of the Version 5 architecture.
+
+---
+
+# 🏗️ Project Structure
 
 ```text
-User
-  │
-  ▼
-Input Processing
-  │
-  ▼
-Intent Detection
-  │
-  ▼
-Context Analysis
-  │
-  ▼
-AI Router
-  │
-  ▼
-AI Provider
-  │
-  ▼
-Response Controller
-  │
-  ▼
-Final Response
+HEIMDALL
+│
+└── Version-5
+    │
+    ├── 🎨 Frontend
+    │   │
+    │   ├── Home Interface
+    │   ├── Chat Interface
+    │   ├── Conversation History
+    │   ├── Settings
+    │   └── Mobile Interface
+    │
+    └── 🧠 Backend
+        │
+        ├── AI Processing
+        ├── Intent Detection
+        ├── Context Handling
+        ├── AI Providers
+        ├── Search Integration
+        ├── Voice Functionality
+        ├── Memory & Profile
+        ├── System Services
+        └── API
