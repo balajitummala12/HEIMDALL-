@@ -1,6 +1,14 @@
 <div align="center">
 
-<img src="Version-5/Frontend/logo.png" alt="HEIMDALL Logo" width="180"/>
+<img src="Version-5/Frontend/logo.png" width="220" height="220" style="border-radius:50%;" alt="HEIMDALL Logo"/>
+
+# HEIMDALL V5
+
+### An Intelligent AI Assistant • Built to Think, Respond & Evolve
+
+[![Version](https://img.shields.io/badge/Version-V5-111111?style=for-the-badge)]()
+[![AI](https://img.shields.io/badge/Powered%20by-AI-6C63FF?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)]()
 
 # ⚡ HEIMDALL V5
 
