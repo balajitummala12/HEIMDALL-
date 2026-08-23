@@ -1,38 +1,59 @@
-# ⚔️ HEIMDALL
+<div align="center">
 
-> **An AI Operating System built from the ground up.**
+# ⚡ HEIMDALL
 
-HEIMDALL is my long-term personal AI project focused on building an intelligent assistant capable of conversation, voice interaction, memory, computer control, vision, automation, and autonomous workflows.
+### An evolving personal AI system.
 
-This repository preserves the complete evolution of HEIMDALL, from its first prototype to its current modular architecture.
+**Building. Breaking. Learning. Evolving.**
 
----
-
-## 📂 Repository Structure
-
-### 📁 Version-1
-The first working prototype of HEIMDALL.
-
-### 📁 Version-2
-A feature-rich monolithic version introducing voice interaction, memory, OCR, web search, and desktop automation.
-
-### 📁 Version-3 *(Current Development)*
-A complete modular rewrite designed for scalability, maintainability, and future AI capabilities.
+</div>
 
 ---
 
-## 🚀 Roadmap
+## 🧠 About HEIMDALL
 
-- ✅ Version 1 — Initial Prototype
-- ✅ Version 2 — Feature-Rich Assistant
-- 🚧 Version 3 — Modular AI Operating System
+HEIMDALL is my ongoing journey into building an intelligent AI assistant that goes beyond a simple chatbot.
 
-Future versions will continue to expand Version-3 through sprint-based development.
+From the earliest versions to **HEIMDALL V5**, this project has evolved through experimentation, failures, fixes, and a lot of learning about how AI-powered systems actually work.
+
+> **HEIMDALL isn't finished. It's evolving.**
 
 ---
 
-## 👨‍💻 Author
+# ⚡ HEIMDALL V5 — Current Generation
 
-**Balaji Tummala**
+The latest version introduces a redesigned interface and a more modular AI architecture.
 
-*"Building not just an assistant, but an AI Operating System."*
+### Core Capabilities
+
+- 🤖 AI-powered conversations
+- 🧠 Context-aware responses
+- 💾 Conversation history
+- 🌐 Web search integration
+- 🧩 Intent detection
+- ⚙️ Response control
+- 🎙️ Voice architecture
+- 📱 Mobile interface
+- 🔒 Environment-based API security
+- 🏗️ Modular frontend and backend architecture
+
+---
+
+## 🏗️ Architecture
+
+```text
+USER
+  │
+  ▼
+HEIMDALL INTERFACE
+  │
+  ▼
+AI ENGINE
+  ├── Intent Detection
+  ├── Context & Memory
+  ├── Response Controller
+  ├── Web Search
+  └── AI Provider
+          │
+          ▼
+       RESPONSE
